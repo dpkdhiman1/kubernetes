@@ -13,12 +13,12 @@ spec:
     metadata:
       labels:
         app: sample-app
-  spec:
-    containers:
-    - name: web-app
-      image: IMAGE_PLACEHOLDER
-      ports:
-      - containerPort: 3000
+    spec:                 # 🟢 FIXED: Indented exactly 4 spaces underneath 'template'
+      containers:
+      - name: web-app
+        image: IMAGE_PLACEHOLDER
+        ports:
+        - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
